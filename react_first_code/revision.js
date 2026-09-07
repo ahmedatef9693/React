@@ -1,7 +1,9 @@
 class Human {
-    constructor() {
-        this.gender = "";
+    gender = "Male";
+    printGender = () => {
+        console.log(this.gender);
     }
+
 }
 
 
@@ -9,12 +11,8 @@ class Human {
 
 
 export class Person extends Human {
-    constructor(name, age) {
-        super()
-        this.name = name;
-        this.age = age;
-    }
-
+    name = "Ahmed";
+    age = 28
     greet() {
         return `Hi, I'm ${this.name} and I'm ${this.age} years old.`;
     }
