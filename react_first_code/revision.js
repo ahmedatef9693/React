@@ -1,5 +1,16 @@
-export class Person {
+class Human {
+    constructor() {
+        this.gender = "";
+    }
+}
+
+
+
+
+
+export class Person extends Human {
     constructor(name, age) {
+        super()
         this.name = name;
         this.age = age;
     }
