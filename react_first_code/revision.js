@@ -13,7 +13,7 @@ class Human {
 export class Person extends Human {
     name = "Ahmed";
     age = 28
-    greet() {
+    printInfos = () => {
         return `Hi, I'm ${this.name} and I'm ${this.age} years old.`;
     }
 }
