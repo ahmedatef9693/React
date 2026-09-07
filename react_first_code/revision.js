@@ -12,7 +12,11 @@ class Human {
 
 export class Person extends Human {
     name = "Ahmed";
-    age = 28
+    age = 28;
+    setInfo = (name, age) => {
+        this.name = name;
+        this.age = age;
+    }
     printInfos = () => {
         return `Hi, I'm ${this.name} and I'm ${this.age} years old.`;
     }
